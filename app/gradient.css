@@ -3,6 +3,18 @@
   background: linear-gradient(90deg, #F0566E 0%, rgba(240, 86, 110, 0.7) 100%);
 }
 
+header.header-gradient {
+  background: linear-gradient(to right, #FFC7D9, #FFBFD3, #FFB7CD), url('/assets/texture/paint-texture.png');
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+footer.footer-gradient {
+  background: linear-gradient(to right, #FFC7D9, #FFBFD3, #FFB7CD), url('/assets/texture/paint-texture.png');
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
 .header-gradient {
   color: #fff;
 }
