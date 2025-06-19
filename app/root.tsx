@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import "./gradient.css";
+import { Link } from "react-router-dom";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -23,6 +25,31 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+function Header() {
+  return (
+    <header className="header-gradient w-full shadow p-4 flex justify-between items-center">
+      <nav className="flex gap-6">
+        <Link to="/" className="text-lg font-bold hover:underline text-white">Home</Link>
+        <Link to="/about" className="text-lg font-bold hover:underline text-white">About</Link>
+        <Link to="/events" className="text-lg font-bold hover:underline text-white">Events</Link>
+      </nav>
+    </header>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer-gradient w-full text-center p-4 mt-8">
+      <nav className="flex justify-center gap-6 mb-2">
+        <Link to="/" className="text-white">Home</Link>
+        <Link to="/about" className="text-white">About</Link>
+        <Link to="/events" className="text-white">Events</Link>
+      </nav>
+      <small>&copy; {new Date().getFullYear()} bity-community</small>
+    </footer>
+  );
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -33,7 +60,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <Header />
+        <div className="min-h-[80vh]">
+          {children}
+        </div>
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>

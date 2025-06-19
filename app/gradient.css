@@ -1,0 +1,12 @@
+/* ヘッダー・フッター用グラデーション */
+.header-gradient, .footer-gradient {
+  background: linear-gradient(90deg, #F0566E 0%, rgba(240, 86, 110, 0.7) 100%);
+}
+
+.header-gradient {
+  color: #fff;
+}
+
+.footer-gradient {
+  color: #fff;
+}
