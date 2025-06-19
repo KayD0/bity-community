@@ -14,4 +14,11 @@ body {
   }
 
   background-color: white; /* 背景を白に設定 */
+  padding-bottom: 60px; /* フッターの高さ分の余白を追加 */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

@@ -29,8 +29,7 @@ function Header() {
   return (
     <header className="header-gradient w-full shadow p-4 flex justify-between items-center">
       <nav className="flex gap-6">
-        <Link to="/" className="text-lg font-bold hover:underline text-white">Home</Link>
-        <Link to="/about" className="text-lg font-bold hover:underline text-white">About</Link>
+        <Link to="/" className="text-lg font-bold hover:underline text-white">About</Link>
         <Link to="/events" className="text-lg font-bold hover:underline text-white">Events</Link>
       </nav>
     </header>
@@ -41,7 +40,6 @@ function Footer() {
   return (
     <footer className="footer-gradient w-full text-center p-4 mt-8">
       <nav className="flex justify-center gap-6 mb-2">
-        <Link to="/" className="text-white">Home</Link>
         <Link to="/about" className="text-white">About</Link>
         <Link to="/events" className="text-white">Events</Link>
       </nav>
