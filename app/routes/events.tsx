@@ -13,7 +13,7 @@ interface Event {
 
 function EventCard({ event }: { event: Event }) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-gray-100 border border-gray-300 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <img
         src={event.image}
         alt={event.title}
